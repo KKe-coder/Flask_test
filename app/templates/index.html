@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{name}}</title>
+    </head>
+    <body>
+    {% if name == "donuts" %}
+    <h1>スペシャルドーナッツ</h1>
+    {% elif name %}
+    <h1>ノーマルドーナッツ</h1>
+    {% else %}
+    <h1>ドーナッツ</h1>
+    {% endif %}
+    <img src="/static/images/donuts.jpg" alt="ドーナッツ">
+    {% for word in category %}
+    <p>{{word}}</p>
+    {% endfor %}
+    </body>
+</html>
